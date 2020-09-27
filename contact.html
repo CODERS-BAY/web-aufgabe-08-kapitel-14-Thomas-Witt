@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="backgroundPicBody">
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="contact.html" class="aktuell">Kontakt</a></li>
+            </ul>
+        </nav>
+       <h1>Kontakt</h1>
+    </header>
+    <form action="ausgabe.html" method="get">
+        <div class="name">
+            <label for="firstName">Vorname</label>
+            <input type="text" name="firstName" id="firstName">
+        </div>
+        <div class="email">
+            <label for="email">E-Mail Adresse</label>
+            <input type="email" name="email" id="email">
+        </div>
+        <div>
+            <label for="date">Besuchstag</label>
+            <input type="date" name="date" id="date">
+        </div>
+        <div>
+            <label for="time">Besuchszeit</label>
+            <input type="time" name="time" id="time">
+        </div>
+        <div>
+            <label for="range">Hat es Ihnen gefallen?</label>
+            <input type="range" name="range" id="range">
+        </div>
+        <div>
+            <input type="checkbox" name="gefallen" id="gefallen">
+            <label for="gefallen">Würden Sie uns weiterempfehlen?</label>
+        </div>
+        <div>
+            <label for="favouriteAnimal">Welche Tierart hat Ihnen am Besten gefallen? (bei mehreren Antworten strg drücken)</label>
+            <select name="favouriteAnimal" id="favouriteAnimal" multiple size="12">
+                <option value="1">Kuh</option>
+                <option value="2">Schaf</option>
+                <option value="3">Löwe</option>
+                <option value="4">Esel</option>
+                <option value="5">Taube</option>
+                <option value="6">Meise</option>
+                <option value="7">Schwalbe</option>
+                <option value="8">Pinguin</option>
+                <option value="9">Wels</option>
+                <option value="10">Hai</option>
+                <option value="11">Aal</option>
+                <option value="12">Karpfen</option>
+            </select>
+        </div>
+        <div>
+            <label for="comment">Kommentar</label>
+            <textarea name="comment" id="comment" cols="20" rows="5"></textarea>
+        </div>
+        <p>
+            <label for="interessen">Mit wem waren Sie hier?</label>
+            <input type="text" list="intliste" name="group" id="group">
+            <datalist id="intliste">
+                <option value="Familienausflug">
+                <option value="Allein unterwegs">
+                <option value="Gruppenausflug">
+                <option value="Ausflug mit Freunden">
+            </datalist>
+        </p>
+        <input type="submit" value="Absenden">
+        <input type="reset" value="Eingabe löschen">
+    </form>
+    <h2>If you have any questions please click <a  href="https://9gag.com/gag/a1W7V52">here</a></h2>
+</body>
+
+</html>
