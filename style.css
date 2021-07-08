@@ -1,0 +1,194 @@
+body {
+    background-attachment: fixed;
+    background-color: rgb(208, 240, 240);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    background: -webkit-gradient( linear, left top, left bottom, from(rgb(143, 236, 240)), to(rgb(61, 110, 156)));
+    background: -o-linear-gradient( rgb(143, 236, 240), rgb(61, 110, 156));
+    background: linear-gradient( rgb(143, 236, 240), rgb(61, 110, 156));
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+nav a {
+    font-size: large;
+    color: rgb(121, 120, 120);
+    text-decoration: none;
+    display: block;
+    margin: 1em;
+}
+
+nav a.aktuell {
+    font-weight: bold;
+    color: rgb(80, 80, 80);
+}
+
+h1 {
+    text-shadow: rgba(169, 169, 169, 0.5) -4px 3px 0pc;
+    text-align: center;
+    font-size: 3rem;
+    border-top: 1px solid;
+    border-left: 3px solid;
+    /* margin: 0 auto; */
+}
+
+h2 {
+    color: olive;
+}
+
+table {
+    font-size: 1.3em;
+    width: 100%;
+    text-align: center;
+}
+
+dl {
+    margin: 2rem 5rem;
+}
+
+div {
+    margin: 1rem 2rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+input[type="submit"] {
+    transform: rotate(10deg);
+}
+
+input[type="reset"] {
+    background-color: rgb(238, 83, 83);
+    transition: all 0.2s ease;
+}
+
+.headerpic {
+    background-size: cover;
+    height: 60vh;
+    width: 100%;
+}
+
+.backgroundPicBody {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url(img/blueBackground.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.headline {
+    margin: 0, 0, 20px;
+}
+
+.smallLineHeight {
+    line-height: 0.9;
+}
+
+.leftpic {
+   width: 300px;
+   float: left;
+   margin-right: 1rem;
+}
+
+.rightpic {
+    width: 300px;
+    float: right;
+    margin-left: 1rem;
+}
+
+.containpic {
+    width: 300px;
+    float: left;
+    margin-right: 1rem;
+}
+
+.cf{
+    border: 2px solid black;
+}
+
+.textFitsContures{
+    float: left;
+    margin-right: 0.5rem;
+    shape-outside: url(img/whale_tail.png);
+    shape-margin: 0.5rem;
+}
+
+.cl {
+    clear: both;
+}
+
+.email {
+    margin: 2rem;
+    background-color: darkslategray;
+    width: 40%;
+    box-shadow: darkcyan 30px 15px 5px;
+}
+
+.name {
+    background-color: cadetblue;
+    min-height: 3rem;
+    max-width: 40%;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 3px;
+}
+
+.letterSpacing {
+    letter-spacing: 5px;
+}
+
+.sticky{
+background-color: cornflowerblue;
+height: 3rem;
+text-align: center;
+position: -webkit-sticky;
+position: sticky;
+top: 0;
+}
+
+.wordSpacing {
+    word-spacing: 1.5rem;
+}
+
+.firstLineInward {
+    text-indent: 2rem;
+}
+
+.movingButton {
+    transition: all 1s ease;
+}
+
+.movingButton:hover {
+    transform: rotate(360deg);
+    transform: translate(100px, 50px);
+}
+.cf::after{
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+nav a:hover {
+    background-color: rgb(82, 191, 228);
+}
+
+a:hover, a:focus, a:active {
+    background-color: paleturquoise;
+    color: blue;
+    text-decoration: underline;
+}
+
+input[type="reset"]:hover {
+    background-color: firebrick;
+}
